@@ -1,0 +1,12 @@
+{% extends 'services/base.html' %} 
+{% load static %} 
+
+
+
+{% block content %}
+
+{% for services in all_services %}
+<h2>{{ services.title }}</h2>
+<p> {{ services.long_description }} </p>
+{% endfor %} 
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'services/base.html' %} 
+{% load static %} 
+
+
+
+{% block content %}
+<h1>Services</h1>
+{% for services in all_services %}
+<h2>{{ services.title }}</h2>
+<p> {{ services.short_description }} </p>
+{% endfor %} 
+
+{% for prices in all_prices %}
+<p> {{ prices.title }} </p>
+<p> {{ prices.price }} UAH </p>
+{% endfor %}
+
+{% endblock %}
